@@ -119,24 +119,25 @@ async function handleSendMessage() {
     try {
         // Call Gemini API
         const response = await fetch(API_URL, {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({
-                contents: [{
-                    parts: [{
-                        text: message
-                    }]
-                }],
-                generationConfig: {
-                    temperature: 0.7,
-                    topK: 40,
-                    topP: 0.95,
-                    maxOutputTokens: 1024,
-                }
-            }),
-        });
+    method: 'POST',
+    headers: {
+        'Content-Type': 'application/json',
+        'X-goog-api-key': API_KEY
+    },
+    body: JSON.stringify({
+        contents: [{
+            parts: [{
+                text: message
+            }]
+        }],
+        generationConfig: {
+            temperature: 0.7,
+            topK: 40,
+            topP: 0.95,
+            maxOutputTokens: 1024,
+        }
+    }),
+});
 
         // Check if response is ok
         if (!response.ok) {
