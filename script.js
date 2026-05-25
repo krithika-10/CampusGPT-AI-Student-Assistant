@@ -1,7 +1,7 @@
 // Gemini API Configuration
 const API_KEY = "AIzaSyCkJzkjdqKLMk18XTjGYui91Xw0ypfO2H0";
 
-const API_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent";
+const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent?key=${API_KEY}`;
 // DOM Elements
 const chatMessages = document.getElementById('chatMessages');
 const userInput = document.getElementById('userInput');
@@ -122,7 +122,6 @@ async function handleSendMessage() {
     method: 'POST',
     headers: {
         'Content-Type': 'application/json',
-        'X-goog-api-key': API_KEY
     },
     body: JSON.stringify({
         contents: [{
