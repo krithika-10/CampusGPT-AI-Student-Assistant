@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusGPT - Your AI Student Companion</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Animated Background Elements -->
+    <div class="animated-bg">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+        <div class="orb orb-4"></div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo">
+                <span class="logo-icon">🎓</span>
+                <span class="logo-text">CampusGPT</span>
+            </div>
+            <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#chatbot" class="nav-link">Chat</a></li>
+                <li><a href="#features" class="nav-link">Features</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="gradient-orb gradient-orb-1"></div>
+            <div class="gradient-orb gradient-orb-2"></div>
+            <div class="gradient-mesh"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge">✨ The Future of Student Learning</div>
+            <h1 class="hero-title">
+                <span class="title-word">Your Personal</span>
+                <span class="title-word gradient-text">AI Study Companion</span>
+            </h1>
+            <p class="hero-subtitle">Get instant help with coding, studying, and career guidance powered by advanced AI. Join thousands of students succeeding with CampusGPT.</p>
+            <a href="#chatbot" class="cta-button premium-button">
+                <span class="button-text">Start Chatting Now</span>
+                <span class="button-glow"></span>
+            </a>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number">1000+</span>
+                    <span class="stat-label">Students</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number">50K+</span>
+                    <span class="stat-label">Questions</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number">24/7</span>
+                    <span class="stat-label">Available</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chatbot Section (moved up as primary feature) -->
+    <section id="chatbot" class="chatbot-section">
+        <div class="chatbot-container">
+            <div class="chatbot-header">
+                <div class="header-content">
+                    <div class="header-icon">💬</div>
+                    <div class="header-text">
+                        <h2>Chat with CampusGPT</h2>
+                        <p>Powered by Advanced AI</p>
+                    </div>
+                </div>
+                <div class="header-status">
+                    <div class="status-dot"></div>
+                    <span>Online</span>
+                </div>
+            </div>
+
+            <div class="chatbot-wrapper">
+                <div class="chat-messages" id="chatMessages">
+                    <div class="message ai-message initial-message">
+                        <div class="message-avatar">🤖</div>
+                        <div class="message-content">
+                            <p>👋 Hello! I'm CampusGPT, your AI study companion. I'm here 24/7 to help you with:</p>
+                            <ul class="help-list">
+                                <li>💻 Coding & Programming Questions</li>
+                                <li>📚 Academic & Study Guidance</li>
+                                <li>🚀 Career & Interview Prep</li>
+                                <li>⚡ Productivity & Time Management</li>
+                            </ul>
+                            <p>What can I help you with today?</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="chat-input-area">
+                    <div class="chat-input-wrapper">
+                        <input 
+                            type="text" 
+                            id="userInput" 
+                            class="chat-input" 
+                            placeholder="Ask me anything..."
+                            autocomplete="off"
+                        >
+                        <button id="sendButton" class="send-button premium-button">
+                            <span class="send-icon">✈️</span>
+                            <span class="button-glow"></span>
+                        </button>
+                    </div>
+                    <p class="input-hint">Press Enter or click to send</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="features-container">
+            <h2 class="section-title">Powerful Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">📚</div>
+                    <h3>AI Study Planner</h3>
+                    <p>Organize your study schedule and get personalized learning plans tailored to your needs</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💻</div>
+                    <h3>Coding Assistant</h3>
+                    <p>Debug code, learn programming concepts, and get explanations for complex algorithms</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📄</div>
+                    <h3>Resume Review</h3>
+                    <p>Get AI-powered feedback on your resume and improve your chances of landing interviews</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">✍️</div>
+                    <h3>Notes Generator</h3>
+                    <p>Create comprehensive study notes from your lectures and topics instantly</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Productivity Coach</h3>
+                    <p>Get motivation, time management tips, and strategies to boost your productivity</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🚀</div>
+                    <h3>Career Guidance</h3>
+                    <p>Explore career paths, prepare for interviews, and grow your professional skills</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="about-container">
+            <div class="about-content">
+                <h2 class="section-title">About CampusGPT</h2>
+                <p class="about-text">
+                    CampusGPT is your intelligent AI study partner, designed specifically for students like you. 
+                </p>
+                <p class="about-text">
+                    Whether you're tackling coding problems, studying for exams, or preparing for interviews, CampusGPT helps you learn faster.
+                </p>
+                <div class="about-stats">
+                    <div class="stat">
+                        <h3>1000+</h3>
+                        <p>Student Users</p>
+                    </div>
+                    <div class="stat">
+                        <h3>50K+</h3>
+                        <p>Questions Answered</p>
+                    </div>
+                    <div class="stat">
+                        <h3>24/7</h3>
+                        <p>Available</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>CampusGPT</h4>
+                    <p>Your AI-powered student companion</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">LinkedIn</a></li>
+                        <li><a href="#">GitHub</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Terms</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 CampusGPT. All rights reserved. Built with ❤️ for students.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
